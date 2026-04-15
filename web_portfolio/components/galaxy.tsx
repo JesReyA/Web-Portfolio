@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 //import {} from 'next/font/google';
 
 class Particle {
@@ -36,6 +36,21 @@ class Particle {
 const Home = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
+    const roles = [
+        "Computer Engineer",
+        "Full-Stack Developer",
+        "Mobile Developer"
+    ]
+
+    const [currentRole, setCurrentRole] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentRole((prevRole) => (prevRole + 1) % roles.length);
+        }, 2000);
+        return () => clearInterval(interval);
+    }, []);
+
     useEffect(() => {
         const canvas = canvasRef.current;
         if (!canvas) return;
@@ -57,14 +72,14 @@ const Home = () => {
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
 
-        ctx.fillText('Jesús Reyna', canvas.width / 2, canvas.height / 2);
+        ctx.fillText('Jesús Reyna', canvas.width / 2, canvas.height * 2 / 7);
         const textCoordinates = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         let particleArray: Particle[] = [];
 
-        const gap = 5;
+        const gap = 4;
         for (let y = 0; y < textCoordinates.height; y += gap) {
             for (let x = 0; x < textCoordinates.width; x += gap) {
                 const opacityIndex = (y * textCoordinates.width + x) * 4 + 3;
@@ -103,15 +118,12 @@ const Home = () => {
     }, []);
 
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center bg-[#000000] text-white overflow-hidden ">
+        <section id="home" className="min-h-screen flex items-center justify-center text-white overflow-hidden ">
             <canvas ref={canvasRef} className="absolute inset-0 w-full h-full">
             </canvas>
-            <div className="relative z-10 text-center mt-32 pointer-events-none">
-                <p className="text-xl md:text-2xl text-gray-400">
-                    Computer Engineer
-                </p>
-                <p className="text-xl md:text-2xl text-gray-400">
-                    Full-Stack Developer
+            <div className="relative z-10 text-center -mt-20 pointer-events-none h-12 flex justify-center">
+                <p key={currentRole} className="text-xl md:text-2xl text-gray-400 animate-slide-up tracking-widest uppercase font-light">
+                    {roles[currentRole]}
                 </p>
             </div>
         </section>
