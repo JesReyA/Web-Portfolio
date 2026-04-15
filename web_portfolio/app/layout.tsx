@@ -26,10 +26,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
-        <Navbar />
-        {children}
+      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+    >
+      <body className="bg-[#050505] text-white relative">
+        <div className="fixed inset-0 z-0 bg-stars-pattern pointer-events-none"></div>
+        <div className="relative z-10">
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );
