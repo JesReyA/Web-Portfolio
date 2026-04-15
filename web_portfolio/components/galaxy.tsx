@@ -1,6 +1,8 @@
 'use client';
 import Link from 'next/link';
 import { useRef, useEffect, useState } from 'react';
+import GalaxyBackground from './galaxyBackground';
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 //import {} from 'next/font/google';
 
 class Particle {
@@ -78,7 +80,7 @@ const Home = () => {
             const fontSize = Math.min(Math.max(window.innerWidth / 8, 40), 120);
 
 
-            const gap = isMobile ? 2 : 4;
+            const gap = isMobile ? 3 : 4;
 
             ctx.font = `bold ${fontSize}px sans-serif`;
             ctx.fillStyle = 'white';
@@ -145,14 +147,35 @@ const Home = () => {
 
     return (
         <section id="home" className="relative h-screen flex items-center justify-center text-white overflow-hidden ">
+            <GalaxyBackground />
             <canvas ref={canvasRef} className="absolute inset-0 w-full h-full">
             </canvas>
 
-            <div className="relative z-10 text-center -mt-50 md:-mt-20 pointer-events-none h-12 flex justify-center items-center overflow-hidden w-full">
+            <div className="relative z-10 text-center -mt-50 md:-mt-30 pointer-events-none h-12 flex justify-center items-center overflow-hidden w-full">
                 <p className={`absolute text-xl md:text-2xl text-gray-400 tracking-widest uppercase font-light transition-all duration-500 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                     }`}>
                     {roles[currentRole]}
                 </p>
+
+            </div>
+            <div className="absolute bottom-20 z-10 flex gap-8 items-center">
+                {/* GitHub */}
+                <a href="https://github.com/JesReyA" target="_blank" rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-[#c084fc] hover:scale-110 transition-all duration-300">
+                    <FiGithub size={28} />
+                </a>
+
+                {/* LinkedIn */}
+                <a href="https://linkedin.com/in/jesreyav" target="_blank" rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-[#c084fc] hover:scale-110 transition-all duration-300">
+                    <FiLinkedin size={28} />
+                </a>
+
+                {/* Email / Contacto */}
+                <a href="jesreyav@gmail.com"
+                    className="text-gray-400 hover:text-[#c084fc] hover:scale-110 transition-all duration-300">
+                    <FiMail size={28} />
+                </a>
 
             </div>
         </section>

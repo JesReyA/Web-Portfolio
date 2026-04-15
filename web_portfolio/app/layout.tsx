@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased`}
     >
       <body className="bg-[#050505] text-white relative">
         <div className="fixed inset-0 z-0 bg-stars-pattern pointer-events-none"></div>
