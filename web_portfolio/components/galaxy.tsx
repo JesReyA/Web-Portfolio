@@ -158,7 +158,7 @@ const Home = () => {
                 </p>
 
             </div>
-            <div className="absolute bottom-20 z-10 flex gap-8 items-center">
+            <div className="absolute sm:bottom-30 md:bottom-20 z-10 flex gap-8 items-center">
                 {/* GitHub */}
                 <a href="https://github.com/JesReyA" target="_blank" rel="noopener noreferrer"
                     className="text-gray-400 hover:text-[#c084fc] hover:scale-110 transition-all duration-300">
