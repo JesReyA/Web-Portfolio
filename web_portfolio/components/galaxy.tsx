@@ -172,7 +172,7 @@ const Home = () => {
                 </a>
 
                 {/* Email / Contacto */}
-                <a href="jesreyav@gmail.com"
+                <a href="https://jesreyav@gmail.com"
                     className="text-gray-400 hover:text-[#c084fc] hover:scale-110 transition-all duration-300">
                     <FiMail size={28} />
                 </a>

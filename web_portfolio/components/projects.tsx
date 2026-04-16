@@ -27,7 +27,7 @@ export default function Projects() {
                             <h3 className="text-2xl font-bold mb-2">Toka2Play</h3>
                             <p className="text-gray-400 mb-4">Videogame miniapp made for Toka at Genius Arena Hackathon 2026 (Semifinalist)</p>
                             <div className="flex space-x-4">
-                                <a href="#" className="text-purple-500 hover:text-purple-400 transition-colors">GitHub</a>
+                                <a href="https://github.com/JesReyA/Toka2Play.git" className="text-purple-500 hover:text-purple-400 transition-colors">GitHub</a>
                                 <a href="#" className="text-purple-500 hover:text-purple-400 transition-colors">Live</a>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ export default function Projects() {
                             <h3 className="text-2xl font-bold mb-2">Numerical Methods</h3>
                             <p className="text-gray-400 mb-4">Application to implement Numerical Methods to solver differen types of equations</p>
                             <div className="flex space-x-4">
-                                <a href="#" className="text-purple-500 hover:text-purple-400 transition-colors">GitHub</a>
+                                <a href="https://github.com/JesReyA/MetodosNum-ricos.git" className="text-purple-500 hover:text-purple-400 transition-colors">GitHub</a>
                                 <a href="#" className="text-purple-500 hover:text-purple-400 transition-colors">Live</a>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ export default function Projects() {
                             <h3 className="text-2xl font-bold mb-2">Differential Equations</h3>
                             <p className="text-gray-400 mb-4">Application to solver Differential Equations using 2 methods</p>
                             <div className="flex space-x-4">
-                                <a href="#" className="text-purple-500 hover:text-purple-400 transition-colors">GitHub</a>
+                                <a href="https://github.com/samuelbahena67-cmd/proyecto.git" className="text-purple-500 hover:text-purple-400 transition-colors">GitHub</a>
                                 <a href="#" className="text-purple-500 hover:text-purple-400 transition-colors">Live</a>
                             </div>
                         </div>
