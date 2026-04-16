@@ -13,7 +13,6 @@ export default function About() {
                             src="/my-image.jpg"
                             alt="Jesús Reyna - Software Engineer"
                             fill
-                            priority
                             className="object-cover"
                         />
 
