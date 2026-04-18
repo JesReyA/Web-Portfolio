@@ -85,7 +85,7 @@ const Home = () => {
                 fontSize = Math.min(Math.max(window.innerWidth / 8, 40), 120);
             }
 
-            const gap = isMobile ? 2 : 4;
+            const gap = isMobile ? 3 : 4;
 
             ctx.font = `bold ${fontSize}px sans-serif`;
             ctx.fillStyle = 'white';
