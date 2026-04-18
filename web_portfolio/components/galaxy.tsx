@@ -82,7 +82,7 @@ const Home = () => {
             let gap;
             if (isLandscapeMobile) {
                 fontSize = Math.min(window.innerWidth / 10, 50);
-                gap = 2;
+                gap = 2.5;
             } else {
                 fontSize = Math.min(Math.max(window.innerWidth / 8, 40), 120);
                 gap = isMobile ? 3 : 4;
