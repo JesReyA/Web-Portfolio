@@ -146,13 +146,13 @@ const Home = () => {
     }, []);
 
     return (
-        <section id="home" className="relative h-screen flex items-center justify-center text-white overflow-hidden gap-6">
+        <section id="home" className="relative h-screen flex items-center justify-center text-white overflow-hidden">
             <GalaxyBackground />
             <canvas ref={canvasRef} className="absolute inset-0 w-full h-full">
             </canvas>
 
             <div className="relative z-10 text-center -mt-50 md:-mt-30 pointer-events-none h-12 flex justify-center items-center overflow-hidden w-full">
-                <p className={`absolute text-xl md:text-2xl text-gray-400 tracking-widest uppercase font-light transition-all duration-500 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                <p className={`absolute text-xl md:text-2xl text-gray-400 landscape:[text-xl -mt-10] tracking-widest uppercase font-light transition-all duration-500 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                     }`}>
                     {roles[currentRole]}
                 </p>
