@@ -79,12 +79,13 @@ const Home = () => {
             const isLandscapeMobile = window.innerWidth > window.innerHeight && window.innerHeight < 600;
 
             let fontSize;
+            let gap;
             if (isLandscapeMobile) {
                 fontSize = Math.min(window.innerWidth / 10, 50);
-                const gap = 2;
+                gap = 2;
             } else {
                 fontSize = Math.min(Math.max(window.innerWidth / 8, 40), 120);
-                const gap = isMobile ? 3 : 4;
+                gap = isMobile ? 3 : 4;
             }
 
 
