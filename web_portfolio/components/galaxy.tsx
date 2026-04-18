@@ -76,7 +76,7 @@ const Home = () => {
             particleArray = [];
 
             const isMobile = window.innerWidth < 768;
-            const isLandscapeMobile = window.innerHeight < 500;
+            const isLandscapeMobile = window.innerWidth > window.innerHeight && window.innerHeight < 600;
 
             let fontSize;
             if (isLandscapeMobile) {
@@ -159,13 +159,13 @@ const Home = () => {
             </canvas>
 
             <div className="absolute z-10 text-center top-[40%] pointer-events-none h-12 flex justify-center items-center overflow-hidden w-full">
-                <p className={`absolute text-xl md:text-2xl max-md:landscape:text-sm text-gray-400 tracking-widest uppercase font-light transition-all duration-500 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                <p className={`absolute text-xl md:text-2xl landscape:max-md:text-sm text-gray-400 tracking-widest uppercase font-light transition-all duration-500 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                     }`}>
                     {roles[currentRole]}
                 </p>
 
             </div>
-            <div className="absolute bottom-30 md:bottom-20 max-md:landscape:bottom-4 z-10 flex gap-8 items-center">
+            <div className="absolute bottom-20 landscape:max-md:bottom-4 z-10 flex gap-8 items-center">
                 {/* GitHub */}
                 <a href="https://github.com/JesReyA" target="_blank" rel="noopener noreferrer"
                     className="text-gray-400 hover:text-[#c084fc] hover:scale-110 transition-all duration-300">
