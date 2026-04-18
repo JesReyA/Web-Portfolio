@@ -63,3 +63,26 @@
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
+
+.fade-edges {
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 1rem))
+  }
+}
+
+.animate-scroll {
+  animation: infinite-scroll 20s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused !important;
+}

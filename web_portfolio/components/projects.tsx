@@ -17,7 +17,7 @@ export default function Projects() {
                     <div id="project1" className=" group relative w-full md:row-span-2 h-full min-h-[400px] md:min-h-[500px] overflow-hidden rounded-2xl border border-[#c084fc]/30 shadow-[0_0_40px_rgba(192,132,252,0.2)] transition-all duration-700 ">
                         <Image
                             src="/inicio-toka2play.jpg"
-                            alt="Jesús Reyna - Software Engineer"
+                            alt="Toka2Play"
                             fill
                             quality={60}
                             className="object-cover md:grayscale md:opacity-70 group-hover:md:grayscale-0 group-hover:md:opacity-100"
@@ -28,7 +28,7 @@ export default function Projects() {
                             <p className="text-gray-400 mb-4">Videogame miniapp made for Toka at Genius Arena Hackathon 2026 (Semifinalist)</p>
                             <div className="flex space-x-4">
                                 <a href="https://github.com/JesReyA/Toka2Play.git" target="_blank" className="text-purple-500 hover:text-purple-400 transition-colors">GitHub</a>
-                                <a href="#" target="_blank" className="text-purple-500 hover:text-purple-400 transition-colors">Live</a>
+                                {/*<a href="#" target="_blank" className="text-purple-500 hover:text-purple-400 transition-colors">Live</a>*/}
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@ export default function Projects() {
                     <div id="project2" className="group relative w-full overflow-hidden rounded-2xl border border-[#c084fc]/30 shadow-[0_0_40px_rgba(192,132,252,0.2)] h-full min-h-[300px]">
                         <Image
                             src="/metodos-numericos.png"
-                            alt="Jesús Reyna - Software Engineer"
+                            alt="Numerical Methods"
                             fill
                             quality={60}
                             className="object-cover md:grayscale md:opacity-70 group-hover:md:grayscale-0 group-hover:md:opacity-100"
@@ -48,7 +48,7 @@ export default function Projects() {
                             <p className="text-gray-400 mb-4">Application to implement Numerical Methods to solver differen types of equations</p>
                             <div className="flex space-x-4">
                                 <a href="https://github.com/JesReyA/MetodosNum-ricos.git" target="_blank" className="text-purple-500 hover:text-purple-400 transition-colors">GitHub</a>
-                                <a href="#" target="_blank" className="text-purple-500 hover:text-purple-400 transition-colors">Live</a>
+                                {/*<a href="#" target="_blank" className="text-purple-500 hover:text-purple-400 transition-colors">Live</a>*/}
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ export default function Projects() {
                     <div id="project3" className="group relative w-full overflow-hidden rounded-2xl border border-[#c084fc]/30 shadow-[0_0_40px_rgba(192,132,252,0.2)] h-full min-h-[300px]">
                         <Image
                             src="/ecuaciones-diferenciales.png"
-                            alt="Jesús Reyna - Software Engineer"
+                            alt="Differential Equations"
                             fill
                             quality={60}
                             className="object-cover md:grayscale md:opacity-70 group-hover:md:grayscale-0 group-hover:md:opacity-100"
@@ -67,7 +67,7 @@ export default function Projects() {
                             <p className="text-gray-400 mb-4">Application to solver Differential Equations using 2 methods</p>
                             <div className="flex space-x-4">
                                 <a href="https://github.com/samuelbahena67-cmd/proyecto.git" target="_blank" className="text-purple-500 hover:text-purple-400 transition-colors">GitHub</a>
-                                <a href="#" target="_blank" className="text-purple-500 hover:text-purple-400 transition-colors">Live</a>
+                                {/*<a href="#" target="_blank" className="text-purple-500 hover:text-purple-400 transition-colors">Live</a>*/}
                             </div>
                         </div>
                     </div>

@@ -45,13 +45,13 @@ const Navbar = () => {
                         <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-gradient-to-r from-purple-500 to-blue-500 transition-all duration-300 transform -translate-x-1/2 group-hover:w-full group-hover:shadow-[0_0_8px_rgba(168,85,247,0.6)]"></span>
                     </li>
 
-                    {/* Contact */}
+                    {/* Contact *
                     <li className="relative group cursor-pointer py-1">
                         <Link href="#contact" className="text-gray-400 transition-all duration-300 group-hover:text-white group-hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]">
                             Contact
                         </Link>
                         <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-gradient-to-r from-purple-500 to-blue-500 transition-all duration-300 transform -translate-x-1/2 group-hover:w-full group-hover:shadow-[0_0_8px_rgba(168,85,247,0.6)]"></span>
-                    </li>
+                    </li>*/}
                 </ul>
             </div>
         </nav>
