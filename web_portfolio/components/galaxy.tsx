@@ -151,7 +151,7 @@ const Home = () => {
             <canvas ref={canvasRef} className="absolute inset-0 w-full h-full">
             </canvas>
 
-            <div className="absolute z-10 text-center top-[45%] md:top-[40%] landscape:top-[50%] pointer-events-none h-12 flex justify-center items-center overflow-hidden w-full">
+            <div className="absolute z-10 text-center top-[30%] md:top-[35%] landscape:top-[50%] pointer-events-none h-12 flex justify-center items-center overflow-hidden w-full">
                 <p className={`absolute text-xl md:text-2xl text-gray-400 landscape:text-lg tracking-widest uppercase font-light transition-all duration-500 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                     }`}>
                     {roles[currentRole]}
