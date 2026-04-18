@@ -76,9 +76,14 @@ const Home = () => {
             particleArray = [];
 
             const isMobile = window.innerWidth < 768;
+            const isLandscapeMobile = window.innerHeight < 500;
 
-            const fontSize = Math.min(Math.max(window.innerWidth / 8, 40), 120);
-
+            let fontSize;
+            if (isLandscapeMobile) {
+                fontSize = Math.min(window.innerWidth / 12, 50);
+            } else {
+                fontSize = Math.min(Math.max(window.innerWidth / 8, 40), 120);
+            }
 
             const gap = isMobile ? 3 : 4;
 
@@ -87,7 +92,9 @@ const Home = () => {
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
 
-            ctx.fillText('Jesús Reyna', canvas.width / 2, canvas.height * 2 / 7);
+            const positionY = isLandscapeMobile ? canvas.height * 0.35 : canvas.height * 2 / 7;
+
+            ctx.fillText('Jesús Reyna', canvas.width / 2, positionY);
             const textCoordinates = ctx.getImageData(0, 0, canvas.width, canvas.height);
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
