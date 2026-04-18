@@ -81,11 +81,12 @@ const Home = () => {
             let fontSize;
             if (isLandscapeMobile) {
                 fontSize = Math.min(window.innerWidth / 10, 50);
+                const gap = 2;
             } else {
                 fontSize = Math.min(Math.max(window.innerWidth / 8, 40), 120);
+                const gap = isMobile ? 3 : 4;
             }
 
-            const gap = isMobile ? 3 : 4;
 
             ctx.font = `bold ${fontSize}px sans-serif`;
             ctx.fillStyle = 'white';
