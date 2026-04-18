@@ -146,7 +146,7 @@ const Home = () => {
     }, []);
 
     return (
-        <section id="home" className="relative h-screen flex items-center justify-center text-white overflow-hidden ">
+        <section id="home" className="relative h-screen flex items-center justify-center text-white overflow-hidden gap-6">
             <GalaxyBackground />
             <canvas ref={canvasRef} className="absolute inset-0 w-full h-full">
             </canvas>
