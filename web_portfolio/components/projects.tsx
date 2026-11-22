@@ -37,8 +37,8 @@ export default function Projects() {
 
                         <div id="project2" className="group relative w-full overflow-hidden rounded-2xl border border-[#c084fc]/30 shadow-[0_0_40px_rgba(192,132,252,0.2)] h-full min-h-[300px]">
                             <Image
-                                src="/metodos-numericos.png"
-                                alt="Numerical Methods"
+                                src="/xo-engine.png"
+                                alt="X&O Engine"
                                 fill
                                 quality={60}
                                 className="object-cover md:grayscale md:opacity-70 group-hover:md:grayscale-0 group-hover:md:opacity-100"
@@ -46,11 +46,11 @@ export default function Projects() {
                             <div className="absolute top-0 left-0 w-full h-1 hidden md:block bg-gradient-to-r from-transparent via-[#c084fc] to-transparent opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-[400px] transition-all duration-[1500ms] ease-in-out"></div>
 
                             <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/90 to-transparent translate-y-0 md:translate-y-[120%] group-hover:md:translate-y-0 transition-transform duration-500 ease-out">
-                                <h3 className="text-2xl font-bold mb-2">Numerical Methods</h3>
-                                <p className="text-gray-400 mb-4">Application to implement Numerical Methods to solver differen types of equations</p>
+                                <h3 className="text-2xl font-bold mb-2">X&O Engine</h3>
+                                <p className="text-gray-400 mb-4">Interactive NFL tactical simulation and sports analytics platform powered by player tracking data and AI, developed for the AWS NFL UNAM Hackathon.</p>
                                 <div className="flex space-x-4">
-                                    <a href="https://github.com/JesReyA/MetodosNum-ricos.git" target="_blank" className="text-purple-500 hover:text-purple-400 transition-colors">GitHub</a>
-                                    {/*<a href="#" target="_blank" className="text-purple-500 hover:text-purple-400 transition-colors">Live</a>*/}
+                                    <a href="https://github.com/JesReyA/XOEngine" target="_blank" className="text-purple-500 hover:text-purple-400 transition-colors">GitHub</a>
+                                    <a href="https://d343t42hrvlm3w.cloudfront.net/cu/two-pointer-blitz/" target="_blank" className="text-purple-500 hover:text-purple-400 transition-colors">Live</a>
                                 </div>
                             </div>
                         </div>

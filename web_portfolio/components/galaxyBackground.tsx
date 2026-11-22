@@ -24,15 +24,15 @@ export default function GalaxyBackground() {
 
         // 2. PARÁMETROS DE LA NEBULOSA
         const parameters = {
-            count: 15000,       // Aumentamos a 15,000 estrellas para más densidad
-            size: 0.02,         // Estrellas un poco más grandes para que el color brille más
+            count: 15000,      
+            size: 0.02,      
             radius: 5,          // Radio total de la galaxia
-            branches: 3,        // Brazos en espiral
-            spin: 1.3,          // Torsión de los brazos (un poco más enroscada)
-            randomness: 0.25,   // Dispersión del polvo estelar
-            randomnessPower: 3, // Concentración en el núcleo
-            insideColor: '#c084fc',  // Núcleo brillante (Morado cósmico)
-            outsideColor: '#1e40af'  // Brazos fríos (Azul profundo)
+            branches: 3,       
+            spin: 1.3,         
+            randomness: 0.25,   
+            randomnessPower: 3, 
+            insideColor: '#c084fc', 
+            outsideColor: '#1e40af' 
         };
 
         const geometry = new THREE.BufferGeometry();

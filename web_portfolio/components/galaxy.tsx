@@ -56,7 +56,7 @@ const Home = () => {
                 setIsVisible(true);
             }, 500);
 
-        }, 3000); // Cambia cada 3 segundos
+        }, 3000); 
 
         return () => clearInterval(interval);
     }, []);
